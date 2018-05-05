@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zelda Trivia!</title>
+</head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/script.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+<link rel="stylesheet" href="CSS/style.css">
+<body>
+
+    <h1>Zelda Trivia Time!</h1>
+
+    <div id="start">
+        <h2>Start!</h2>
+
+    </div>
+    <div id="answers">
+        <p id="reset">Click Me to Try Again!</p>
+        <div id="score"></div>
+
+
+    </div>
+
+    <div id="quiz">
+        <div id="timer"></div>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/31-08T1BADL.jpg">
+        <form>
+            <p>What year did the original Legend of Zelda make its debut?</p>
+                <div>
+                  <input type="radio" id="question1Choice1"
+                   name="question1" value="1985">
+                  <label for="question1Choice1">1985</label>
+              
+                  <input type="radio" id="question1Choice2"
+                   name="question1" value="1987">
+                  <label for="question1Choice2">1987</label>
+              
+                  <input type="radio" id="question1Choice3"
+                   name="question1" value="1989">
+                  <label for="question1Choice3">1989</label>
+
+                  <input type="radio" id="question1Choice4"
+                  name="question1" value="1991">
+                 <label for="question1Choice4">1991</label>
+                </div>
+               <p></p>
+
+            <p>What is not a piece of the triforce?</p>
+                <div>
+                  <input type="radio" id="question2Choice1"
+                   name="question2" value="courage">
+                  <label for="question2Choice1">Triforce of Courage</label>
+              
+                  <input type="radio" id="question2Choice2"
+                   name="question2" value="strength">
+                  <label for="question2Choice2">Triforce of Strength</label>
+              
+                  <input type="radio" id="question2Choice3"
+                   name="question2" value="power">
+                  <label for="question2Choice3">Triforce of Power</label>
+
+                  <input type="radio" id="question2Choice4"
+                  name="question2" value="wisdom">
+                 <label for="question2Choice4">Triforce of Wisdom</label>
+                </div>
+                <p></p>
+
+        <p>What race does link <strong>not</strong> gain the ability to become in Majora's Mask?</p>
+            <div>
+                <input type="radio" id="question3Choice1"
+                name="question3" value="zora">
+                <label for="question3Choice1">Zora</label>
+                    
+                <input type="radio" id="question3Choice2"
+                name="question3" value="gerudo">
+                <label for="question3Choice2">Gerudo</label>
+                    
+                <input type="radio" id="question3Choice3"
+                name="question3" value="deku">
+                <label for="question3Choice3">Deku</label>
+      
+                <input type="radio" id="question3Choice4"
+                name="question3" value="goron">
+                <label for="question3Choice4">Goron</label>
+            </div>
+            <p></p>
+  
+        <p>What animal is Ganon based off of?</p>
+            <div>
+                <input type="radio" id="question4Choice1"
+                 name="question4" value="goat">
+                <label for="question4Choice1">Goat</label>
+            
+                <input type="radio" id="question4Choice2"
+                 name="question4" value="pig">
+                <label for="question4Choice2">Pig</label>
+            
+                <input type="radio" id="question4Choice3"
+                 name="question4" value="wolf">
+                <label for="question4Choice3">Wolf</label>
+
+                <input type="radio" id="question4Choice4"
+                name="question4" value="dragon">
+               <label for="question4Choice4">Dragon</label>
+              </div>
+              <p></p>
+
+        <p>Who is the current producer of The Legend of Zelda series?</p>
+            <div>
+                <input type="radio" id="question5Choice1"
+                 name="question5" value="koji">
+                <label for="question5Choice1">Koji Kondo</label>
+            
+                <input type="radio" id="question5Choice2"
+                 name="question5" value="eiji">
+                <label for="question5Choice2">Eiji Aonuma</label>
+            
+                <input type="radio" id="question5Choice3"
+                 name="question5" value="shigeru">
+                <label for="question5Choice3">Shigeru Miyamoto</label>
+
+                <input type="radio" id="question5Choice4"
+                name="question5" value="satoru">
+               <label for="question5Choice4">Satoru Iwata</label>
+              </div>
+              <p></p>
+         <p>What does song of the sun do in Ocarina of Time?</p>
+              <div>
+                  <input type="radio" id="question6Choice1"
+                  name="question6" value="newDay">
+                  <label for="question3Choice1">Sets time to a new day</label>
+                      
+                  <input type="radio" id="question6Choice2"
+                  name="question6" value="killUndead">
+                  <label for="question6Choice2">Kills all undead</label>
+                      
+                  <input type="radio" id="question6Choice3"
+                  name="question6" value="light">
+                  <label for="question6Choice3">Calls upon the light</label>
+        
+                  <input type="radio" id="question6Choice4"
+                  name="question6" value="above">
+                  <label for="question6Choice4">All of the above</label>
+              </div>  
+              <p></p>
+        <p>Where is the Temple of Light located in Ocarina of Time?</p>
+              <div>
+                    <input type="radio" id="question7Choice1"
+                     name="question7" value="sacredRealm">
+                    <label for="question7Choice1">The Sacred Realm</label>
+                
+                    <input type="radio" id="question7Choice2"
+                     name="question7" value="castleTown">
+                    <label for="question7Choice2">Hyrule Castle Town</label>
+                
+                    <input type="radio" id="question7Choice3"
+                     name="question7" value="lostWoods">
+                    <label for="question7Choice3">The Lost Woods</label>
+  
+                    <input type="radio" id="question7Choice4"
+                    name="question7" value="sacredPlains">
+                   <label for="question7Choice4">The Sacred Plains</label>
+                  </div>
+                  <p></p>
+        <p>Which of these things is not like the other one?</p>
+              <div>
+                  <input type="radio" id="question8Choice1"
+                   name="question8" value="zelda">
+                  <label for="question8Choice1">Zelda</label>
+              
+                  <input type="radio" id="question8Choice2"
+                   name="question8" value="shiek">
+                  <label for="question8Choice2">Shiek</label>
+              
+                  <input type="radio" id="question8Choice3"
+                   name="question8" value="tetra">
+                  <label for="question8Choice3">Tetra</label>
+
+                  <input type="radio" id="question8Choice4"
+                  name="question8" value="impa">
+                 <label for="question8Choice4">Impa</label>
+                </div>
+                <p></p>
+        <p>What dungeon from Ocarina of Time arguably presented the greatest challenge to players?</p>
+              <div>
+                  <input type="radio" id="question9Choice1"
+                   name="question9" value="deku">
+                  <label for="question9Choice1">The Deku Tree</label>
+              
+                  <input type="radio" id="question9Choice2"
+                   name="question9" value="water">
+                  <label for="question9Choice2">The Water Temple</label>
+              
+                  <input type="radio" id="question9Choice3"
+                   name="question9" value="fire">
+                  <label for="question9Choice3">The Fire Temple</label>
+
+                  <input type="radio" id="question9Choice4"
+                  name="question9" value="jabu">
+                 <label for="question9Choice4">Jabu Jabu's Belly</label>
+                </div>  
+                <p></p>
+       
+                <p>What enemy scared Andrea the most as a child?</p> 
+          <div>
+                  <input type="radio" id="question10Choice1"
+                   name="question10" value="redeads">
+                  <label for="question10Choice1">Redeads</label>
+              
+                  <input type="radio" id="question10Choice2"
+                   name="question10" value="wallmasters">
+                  <label for="question10Choice2">Wallmasters</label>
+              
+                  <input type="radio" id="question10Choice3"
+                   name="question10" value="floormasters">
+                  <label for="question10Choice3">Floormasters</label>
+
+                  <input type="radio" id="question10Choice4"
+                  name="question10" value="peahats">
+                 <label for="question10Choice4">Peahats</label>
+                </div>
+
+
+
+                <div>
+                    <button class="btn btn-success" id="submit" type="submit">Submit!</button>
+             
+                </div>
+                <br>
+
+                
+              </form>
+            </div>
+            <p></p>
+
+
+<!-- <script>
+
+var playerScore = 0;
+var timeLeft = 101;
+var timerId;
+
+
+$("#answers").hide();
+$("#quiz").hide();
+
+function tick() {
+
+  timeLeft = timeLeft - 1;
+  $("#timer").text("Seconds Remaining: " + timeLeft);
+        console.log(timeLeft)
+    if (timeLeft == 0) {
+        clearInterval(timerId);
+        $("#quiz").hide();
+        $("#score").html("Correct Answers: " + playerScore +"<p>Incorrect Answers: " + (10-playerScore) );
+        $("#answers").show();
+     }
+}
+
+$("#start").on("click", function() {
+    $("#start").hide();
+    $("#quiz").show();
+    $("#answers").hide()
+    timerId = setInterval(tick, 1000);     
+    playerScore = 0;
+    timeLeft = 121; 
+})
+
+
+
+//1987
+    $('#question1Choice2').click(function() {
+    if($('#question1Choice2').is(':checked')) { ;
+    playerScore++ }
+    else {
+    return};
+});
+
+//triforce of strength
+    $('#question2Choice3').click(function() {
+        if($('#question2Choice3').is(':checked')) { ;
+    playerScore++;
+    console.log(playerScore)}
+   else {
+   return};
+});
+
+//gerudo
+ $('#question3Choice2').click(function() {
+        if($('#question3Choice2').is(':checked')) { ;
+    playerScore++;
+    console.log(playerScore)}
+   else {
+   return};
+});
+
+//pig
+ $('#question4Choice2').click(function() {
+        if($('#question4Choice2').is(':checked')) { ;
+    playerScore++;
+    console.log(playerScore)}
+   else {
+   return};
+});
+
+//miyamoto
+ $('#question5Choice3').click(function() {
+        if($('#question5Choice3').is(':checked')) { ;
+    playerScore++;
+    console.log(playerScore)}
+   else {
+   return};
+});
+
+//all of the above
+ $('#question6Choice4').click(function() {
+        if($('#question6Choice4').is(':checked')) { ;
+    playerScore++;
+    console.log(playerScore)}
+   else {
+   return};
+});
+
+//sacred realm
+ $('#question7Choice1').click(function() {
+        if($('#question7Choice1').is(':checked')) { ;
+    playerScore++;
+    console.log(playerScore)}
+   else {
+   return};
+});
+
+//impa
+ $('#question8Choice4').click(function() {
+        if($('#question8Choice4').is(':checked')) { ;
+    playerScore++;
+    console.log(playerScore)}
+   else {
+   return};
+});
+
+//water temple
+$('#question9Choice2').click(function() {
+        if($('#question9Choice2').is(':checked')) { ;
+    playerScore++;
+    console.log(playerScore)}
+   else {
+   return};
+});
+
+//bonus; wallmasters
+$('#question10Choice2').click(function() {
+        if($('#question10Choice2').is(':checked')) { ;
+    playerScore++;
+    console.log(playerScore)}
+   else {
+   return};
+});
+
+$("#submit").on("click", function(e){
+    $("#quiz").hide();
+    $("#score").html("Correct Answers: " + playerScore +"<p>Incorrect Answers: " + (10-playerScore) );
+    $("#answers").show();
+    clearInterval(timerId);
+    return false;
+});
+
+function resetGame() {
+    $("#start").hide();
+    $("#quiz").show();
+    $("#answers").hide()
+    timerId = setInterval(tick, 1000);     
+    playerScore = 0;
+    timeLeft = 121; 
+    $("input").prop("checked", false);
+
+};
+
+$("#reset").on("click", resetGame);
+
+</script> -->
+    
+</body>
+</html>
